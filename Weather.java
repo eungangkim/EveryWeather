@@ -81,7 +81,7 @@ public class Weather {
     	return "하늘 상태는 "+currentWeatherDescription+"입니다.  ";
     }
     private void API() {
-        String apiKey = "0eb8c8a1708ec506be4558433287bc04";
+        String apiKey = "";
         if(city.equals("default"))
         	city = "Seoul";
         currentWeatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
